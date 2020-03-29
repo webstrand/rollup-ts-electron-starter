@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"composite": true,
+		"module": "ES2015",
+		"moduleResolution": "node",
+		"outDir": "../../build/client",
+		"sourceMap": true,
+		"strict": true,
+		"target": "ES2019",
+		"types": []
+	},
+	"include": [ "**/*" ]
+}

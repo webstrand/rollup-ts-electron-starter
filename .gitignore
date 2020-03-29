@@ -1,0 +1,9 @@
+/.vscode/
+/build/
+/dist/client.js
+/dist/client.js.map
+/dist/electron.js
+/dist/electron.js.map
+/node_modules/
+/pnpm-debug.log
+/rollup.config.js

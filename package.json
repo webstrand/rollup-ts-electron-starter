@@ -1,0 +1,25 @@
+{
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^11.0.2",
+		"@rollup/plugin-node-resolve": "^7.1.1",
+		"@types/node": "^12.12.32",
+		"@typescript-eslint/eslint-plugin": "^2.22.0",
+		"@typescript-eslint/parser": "^2.22.0",
+		"concurrently": "^5.1.0",
+		"electron": "^8.2.0",
+		"eslint": "^6.8.0",
+		"rollup": "^2.2.0",
+		"typescript": "^3.8.3"
+	},
+	"license": "AGPLv3",
+	"main": "index.js",
+	"private": true,
+	"scripts": {
+		"build": "tsc -b && rollup -c",
+		"lint": "eslint . --ext .ts,.tsx,.json",
+		"start": "electron dist/electron.js",
+		"watch": "tsc -b && concurrently npm:watch-ts npm:watch-js",
+		"watch-ts": "tsc -b -w",
+		"watch-js": "rollup -c -w"
+	}
+}

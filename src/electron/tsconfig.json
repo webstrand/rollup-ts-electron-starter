@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"composite": true,
+		"module": "ES2015",
+		"moduleResolution": "node",
+		"outDir": "../../build/electron",
+		"sourceMap": true,
+		"strict": true,
+		"target": "ES2019",
+		"types": []
+	},
+	"include": [ "**/*" ],
+	"references": [
+		{ "path": "../client" }
+	]
+}
